@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "lamplightmod",
+  "version": "${version}",
+
+  "name": "Lamplight Mod",
+  "description": "Lamplight Mod is a minecraft utility mod for survival based builders and technical players.",
+  "authors": [
+    "portableharuma"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/lamplightmod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.portableharuma.lamplightmod.Lamplight"
+    ]
+  },
+  "mixins": [
+    "lamplightmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": ""
+  }
+}
